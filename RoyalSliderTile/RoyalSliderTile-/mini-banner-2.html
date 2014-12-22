@@ -1,0 +1,35 @@
+﻿
+       <div id="banner2" class="royalSlider clearfix">            
+            <ul class="royalSlidesContainer">
+                <li class="royalSlide" data-src="img/bannerAssets/1.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/2.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/3.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/4.jpg"></li> 
+            </ul>   
+            <p class="navId"></p>                  
+       </div> <!-- Banner 2 End -->
+    	<span class="created-with-api-arrow"></span>
+<script>
+	jQuery(document).ready(function() {		
+    		
+				    var banner2 = $('#banner2').royalSlider({
+						slideTransitionSpeed:400,              
+			  		//slideTransitionEasing:"easeInOutCubic",
+						controlNavEnabled:false,
+						directionNavEnabled: true,
+						directionNavAutoHide: false,
+						slideshowEnabled: true,           
+						slideshowDelay:4000,
+						
+						beforeLoadStart:function() {					
+						$("p.navId").text((this.currentSlideId+1) + "/"  + (this.numSlides) );
+						this.arrowLeft.html("&larr;");
+						this.arrowRight.html("&rarr;");
+						},
+						beforeSlideChange:function() {					
+							$("p.navId").text((this.currentSlideId+1) + "/"  + (this.numSlides) );
+						}
+				    }).data("royalSlider");	
+		
+	});
+</script>

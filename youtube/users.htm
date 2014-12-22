@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+
+.narrow #feedlyTabsHolder {
+
+background-image: url(http://s3.feedly.com/production/head/images/icon-feedly.png );
+background-position: 10px 31px;
+background-repeat: no-repeat;
+-webkit-background-size: 24px;
+-moz-background-size: 24px;
+opacity: 1;
+}
+#feedlyTabsHolder {
+width: 260px;
+/*float: left;*/
+left:-260px;
+color: rgba(0, 0, 0, 0.65);
+line-height: 28px;
+font-weight: normal;
+position: fixed;
+opacity: 1;
+background-color: #EEF;
+background-size: 24px 24px;
+overflow: hidden;
+-webkit-background-size: 24px 24px;
+-mox-background-size: 24px 24px;
+}
+#feedlyTabsHolder.picturePicture,  .narrow #feedlyTabsHolder.picturePicture {
+width: 260px;
+background-color: #E0E0E0;
+background-image: none;
+z-index: 611;
+opacity: 1;
+box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 1px 6px rgba( 0, 0, 0, 0.2 );
+}
+#feedlyTabsHolder.openleft {
+	left:0;
+}
+/*
+.narrow .picturePicture .panels {
+visibility: visible;
+}
+.narrow .panels {
+visibility: hidden;
+}
+*/
+.panels,#feedlyTabsHolder {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#store {
+/*overflow-y: scroll;*/
+overflow-x: hidden;
+height:80%;
+}
+#store .topicSuggestion {
+margin: 5px;
+margin-right: 20px;
+background-size: 40px 40px;
+line-height: 40px;
+padding-left: 50px;
+background-color: rgba(255, 255, 255, 0.5);
+background-repeat: no-repeat;
+margin-left: 20px;
+cursor: pointer;
+font-size: 13px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+</head><body class="narrow">
+	<div id='tabsHolderTrigger'><img src='http://s3.feedly.com/production/head/images/icon-feedly.png'></div>
+<div id="feedlyTabsHolder" class=""> 	
+	<div class="panels">
+	<div id="store">
+<a class="useravatar" title="浏览所有 36氪 的文章" href="http://www.imdevice.com/author/36kr/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/36kr-150x150.png)">
+36氪</div>
+</a>
+
+<a class="useravatar" title="浏览所有 Engadget 中国版 的文章" href="http://www.imdevice.com/author/engadgetchina/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/08/photo.jpg)">
+Engadget 中国版</div>
+</a>
+
+<a class="useravatar" title="浏览所有 Evolife 爱活网 的文章" href="http://www.imdevice.com/author/evolife/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/evolife-150x150.jpg)">
+Evolife 爱活网</div>
+</a>
+
+<a class="useravatar" title="浏览所有 GeekPark 极客公园 的文章" href="http://www.imdevice.com/author/geekpark/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/geekpark-150x150.jpg)">
+GeekPark 极客公园</div>
+</a>
+
+<a class="useravatar" title="浏览所有 虎嗅网 Huxiu 的文章" href="http://www.imdevice.com/author/huxiu/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/08/1-150x150.jpg)">
+虎嗅网 Huxiu</div>
+</a>
+
+<a class="useravatar" title="浏览所有 ifanr 爱范儿 的文章" href="http://www.imdevice.com/author/ifanr/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/ifanr-150x150.png)">
+ifanr 爱范儿</div>
+</a>
+
+<a class="useravatar" title="浏览所有 IMDevice, 爱米 的文章" href="http://www.imdevice.com/author/imdevice/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/08/logo-150x150.jpg)">
+IMDevice, 爱米</div>
+</a>
+
+<a class="useravatar" title="浏览所有 IMDevice 爱米 的文章" href="http://www.imdevice.com/author/lcw/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/imdevice1.png)">
+IMDevice 爱米</div>
+</a>
+
+<a class="useravatar" title="浏览所有 leiphone 雷锋网 的文章" href="http://www.imdevice.com/author/leiphone/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/leiphone-150x150.png)">
+leiphone 雷锋网</div>
+</a>
+
+<a class="useravatar" title="浏览所有 驱动之家 MyDrivers 的文章" href="http://www.imdevice.com/author/mydrivers/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/08/11-150x150.jpg)">
+驱动之家 MyDrivers</div>
+</a>
+
+<a class="useravatar" title="浏览所有 tech2ipo 创见 的文章" href="http://www.imdevice.com/author/tech2ipo/">
+<div class="topicSuggestion" style="background-image: url(http://www.imdevice.com/wp-content/uploads/2013/07/tech2ipo-150x150.jpg)">
+tech2ipo 创见</div>
+</a>
+
+</div>
+</div>
+</div>
+<script>
+		//	$('#feedlyTabsHolder').hover(function(){$(this).toggleClass('picturePicture');});
+$('#tabsHolderTrigger').click(function(){$('#feedlyTabsHolder').toggleClass('openleft');});
+</script>
+</body></html>

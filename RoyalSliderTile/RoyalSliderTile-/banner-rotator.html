@@ -1,0 +1,52 @@
+﻿<div id="banner-rotator" class="royalSlider default">
+    <!-- <div class="royalLoadingScreen"><p>Loading slider&hellip;<br>Click and drag to navigate</p></div>  -->
+    
+    <ul class="royalSlidesContainer">
+        <li class="royalSlide">                     
+        	<img class="royalImage" src="img/1150x400/6.jpg" width="1150" height="400"/>
+            <div class="royalCaption" style="left:58%; text-align:center; color:#33383e; width:315px; top: 110px;">
+                <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="15" style="width: 100%;">Animated Blocks</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movetop"  data-move-offset="8" style="top:35px; width: 100%;">with Custom Effects for Each Item</div>
+                <div class="royalCaptionItem sgSmallText " data-show-effect="fade movetop" data-move-offset="8" data-delay="600" style="top:70px; left: 96px;"><a class="tintButton non-draggable" href="javascript:void()">Button Example</a></div>
+            </div>      	
+        </li>
+        <li class="royalSlide"> 
+        	<img class="royalImage" src="img/1150x400/7.jpg" width="1150" height="400"/>
+            <div class="royalCaption" style="left:57%; top:65px; color:#b93;">
+                <div class="royalCaptionItem" data-show-effect="moveleft fade" data-move-offset="30" style="width: 280px;">Drag Navigation</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="moveleft fade" style="left: 120px; top:35px; width: 200px;" data-move-offset="30">with Mobile Support</div>
+            </div>         	
+        </li> 
+        <li class="royalSlide"> 
+        	<img class="royalImage" src="img/1150x400/8.jpg" width="1150" height="400"/>
+            <div class="royalCaption" style="left:40%; top:130px; width:300px; color: #eaeaed;">
+                <div class="royalCaptionItem " data-show-effect="fade moveleft"  data-move-offset="30" style="left: -320px;">Autoplay Slideshow</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade moveright" data-move-offset="20" style="left: -200px; top: 30px;">with Pause on Hover</div>
+            </div>      	
+        </li>
+        <li class="royalSlide">          
+           <img class="royalImage" src="img/1150x400/12.jpg" width="1150" height="400"/>        
+           <div class="royalCaption" style="left: 35%; top: 130px; width:400px; color: #4e4c39; text-align:center;" >
+                <div class="royalCaptionItem " data-show-effect="fade movetop"  data-move-offset="10" style="left: -320px; width: 100%;">Smart Lazy-Loading</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="400" data-move-offset="5"  style="left: -320px; top: 35px; width: 100%;" >Preloads Nearby Images After Current</div>
+            </div>                               	
+        </li>
+    </ul>  
+   <!--  <div class="innerShadow top"></div>     
+    <div class="innerShadow bottom"></div>      -->         
+</div>
+
+<script>
+	jQuery(document).ready(function() {		
+		royalSliderInstance = $('#banner-rotator').royalSlider({	
+			imageAlignCenter:true,
+			directionNavEnabled: true,
+			directionNavAutoHide: true,
+			controlNavEnabled:false,
+			slideshowEnabled: true,           
+			slideshowDelay:3000,
+   		hideArrowOnLastSlide:true,
+   		keyboardNavEnabled:true
+	    }).data('royalSlider');		
+	});
+</script>

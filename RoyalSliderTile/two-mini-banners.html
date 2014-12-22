@@ -1,0 +1,104 @@
+<div id="bannersContainer">
+            	
+        <div id="banner1" class="royalSlider iskin clearfix">           
+            <ul class="royalSlidesContainer" id="testId">
+          	   <li class="royalSlide" style="background:#83AF9B;"> 
+                    <div class="royalCaption">
+                    	<div class="royalCaptionItem midTextWithBG" data-easing="easeOutSine" data-show-effect="moveleft fade" data-move-offset="50" style="top:59px;  background-color:#FE4365; left:78px;">Use Slider</div>
+                        <div class="royalCaptionItem midTextWithBG" data-easing="easeOutSine" data-show-effect="moveright fade" data-move-offset="50" style="background-color:#FC9D9A; top:106px; left:47px;">as Presentation</div>
+                        <div class="royalCaptionItem midTextWithBG" data-easing="easeOutSine" data-show-effect="moveleft fade" data-move-offset="50" style="background-color:#FE4365; top:153px; left:64px;">or as Gallery</div>
+                    </div>         	
+                </li>                
+                <li class="royalSlide" style="background:#490A3D;"> 
+                    <div class="royalCaption">
+                        <div class="royalCaptionItem midTextWithBG" data-show-effect="moveleft fade" data-move-offset="193" style="left:10px; top:10px;">Create</div>
+                        <div class="royalCaptionItem midTextWithBG" data-show-effect="moveleft fade" data-move-offset="231" style="left:10px; top:57px;">Awesome</div>
+                        <div class="royalCaptionItem midTextWithBG" data-show-effect="moveleft fade" data-move-offset="253" style="left:10px; top:104px;">Slideshows</div>
+                    
+                        <div class="royalCaptionItem" data-show-effect="moveright fade" style="background:url(img/bannerAssets/envato_logo_codecanyon.png) no-repeat; width:46px; height:43px; left:244px; top:205px;"></div>  	
+                    </div>         	
+                </li> 
+                <li class="royalSlide" style="background:#9A8194;"> 
+                    <div class="royalCaption">
+                        <div class="royalCaptionItem midTextWithBG" data-easing="easeOutCirc" data-show-effect="moveleft fade" data-move-offset="50" style="top:59px;  background-color:#5B527F; left:94px;">Custom</div>
+                        <div class="royalCaptionItem midTextWithBG" data-easing="easeOutCirc" data-show-effect="moveright fade" data-move-offset="50" style="background-color:#5B527F; top:106px; left:80px;">Animation</div>
+                        <div class="royalCaptionItem midTextWithBG" data-easing="easeOutCirc" data-show-effect="moveleft fade" data-move-offset="50" style="background-color:#5B527F; top:153px; left:98px;">Effects</div>
+                    </div>    	
+                </li>
+                <li class="royalSlide" style="background:#fac41a;"> 
+                    <div class="royalCaption">
+                    	<div class="royalCaptionItem" data-show-effect="movetop fade"  style="left:104px; top:20px; ">                    	
+                        	<img src="img/bannerAssets/rockstar-wordpress-designer.jpg"  width="92" height="120"></img>
+						</div>
+                        <div class="royalCaptionItem midTextWithBG" data-show-effect="moveleft fade" data-move-offset="193" style="left:79px; top:150px; background-color:#4f95af;">Showcase</div>
+                        <div class="royalCaptionItem midTextWithBG" data-show-effect="moveright fade" data-move-offset="231" style="left:93px; top:192px; background-color:#4f95af;">Product</div>
+      	
+                    </div>         	
+                </li>
+                
+            </ul>    
+        </div> <!-- Banner 1 End -->
+   
+  
+       <div id="banner2" class="royalSlider clearfix">            
+            <ul class="royalSlidesContainer">
+                <li class="royalSlide" data-src="img/bannerAssets/1.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/2.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/3.jpg"></li> 
+                <li class="royalSlide" data-src="img/bannerAssets/4.jpg"></li> 
+            </ul>   
+            <p class="navId"></p>                  
+        </div> <!-- Banner 2 End -->
+    	<span class="created-with-api-arrow"></span>
+</div> <!-- Banners container ENd -->
+
+<script>
+	jQuery(document).ready(function() {		
+    		
+   		var banner1 = $('#banner1').royalSlider({
+   			slideTransitionType: "fade",
+   			slideTransitionSpeed: 800,              
+  			slideTransitionEasing:"easeInOutSine",
+			captionShowEffects:["moveleft", "fade"],
+			captionShowDelay:200,
+			captionShowSpeed:400, 
+ 			captionShowEasing:"easeOutBack",
+			directionNavEnabled: false,
+			controlNavEnabled:true,
+			slideshowEnabled: true,           
+			slideshowDelay:3000,
+			slideshowPauseOnHover: false  
+	    }).data("royalSlider");				
+		
+		
+		var banner2 = $('#banner2').royalSlider({
+			slideTransitionSpeed:400,              
+  			slideTransitionEasing:"easeInOutCubic",
+			controlNavEnabled:false,
+			slideshowEnabled: true,           
+			slideshowDelay:4000,	
+			hideArrowOnLastSlide:false,
+			
+			beforeLoadStart:function() {					
+				$("p.navId").text((this.currentSlideId+1) + "/"  + (this.numSlides) );
+				this.arrowLeft.html("&larr;");
+				this.arrowRight.html("&rarr;");
+			},
+			beforeSlideChange:function() {					
+				$("p.navId").text((this.currentSlideId+1) + "/"  + (this.numSlides) );
+			}
+	    }).data("royalSlider");	
+			
+		
+		royalSliderInstance = {
+			destroy:function() {
+				banner1.destroy();
+				banner2.destroy();
+				$('#bannersContainer').remove();
+			}, 
+			slider: $('#bannersContainer')
+		};
+			
+		
+	});
+</script>

@@ -1,0 +1,59 @@
+﻿<div id="hotphones" class="royalSlider horizon">
+    <!-- <div class="royalLoadingScreen"><p>Loading slider&hellip;<br>Click and drag to navigate</p></div>  -->
+    
+    <ul class="royalSlidesContainer">
+        <li class="royalSlide">                     
+        	<img class="royalImage" src="img/a/hotphones/googlenexus.png"/>
+            <div class="royalCaption" style="text-align:left; color:#fff; width:306px; top: 10px;">
+                <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="15" style="left:10px;">Galaxy<br>Nexus</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movetop"  data-move-offset="8" style="top:75px; left:40px;">Android 4.0</div>
+                <div class="royalCaptionItem sgSmallText " data-show-effect="fade movetop" data-move-offset="8" data-delay="600" style="top:120px; left: 10px;">
+                	<a class="tintButton non-draggable" href="javascript:void()">开卖</a></div>
+            </div>      	
+        </li>        
+        <li class="royalSlide"> 
+        	<img class="royalImage" src="img/a/hotphones/nokia-800.png"/>
+            <div class="royalCaption">
+            	<div class="royalCaptionItem " data-show-effect="fade moveleft"  data-move-offset="30" style="left: 125px;">Lumia 800</div>
+                <div class="royalCaptionItem " data-show-effect="fade moveleft"  data-move-offset="30" style="left: 200px; top:40px;">Nokia</div>
+                <div class="royalCaptionItem " data-show-effect="fade moveright" data-move-offset="20" style="left: 160px; top: 80px;">Windows</div>
+                <div class="royalCaptionItem " data-show-effect="fade moveright" data-move-offset="20" style="left: 170px; top: 108px;">Phone</div>
+            </div>      	
+        </li>
+        <li class="royalSlide" style="background:#26B1EA;">          
+           <div class="royalCaption" style="" >
+           	<div class="royalCaptionItem " data-show-effect="fade moveright" data-move-offset="5" style="left: 115px; top: 10px;"><img src="img/a/hotphones/iphone4s.png"></div>
+                <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="10" style="left:1px;">iPhone</div>
+                <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="10" style="left:60px;top:40px">4S</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="400" data-move-offset="15"  style=" top: 75px;left:10px" >Siri  A5</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="500" data-move-offset="15"  style=" top: 100px;left:10px" >8MP 1080p</div>
+            </div>                         	
+        </li>
+        <li class="royalSlide" >     
+        	<img class="royalImage" src="img/a/hotphones/galaxy-s2.jpg"/>     
+           <div class="royalCaption" >
+                <div class="royalCaptionItem" data-show-effect="fade movetop"  data-move-offset="10" style="left:10px;">Galaxy S II</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movetop"  data-move-offset="10" style="left:10px;top:36px;">Super AMOLED +</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="400" data-move-offset="15"  style=" top: 75px;left:10px" >8.49mm超薄</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="fade movebottom" data-delay="500" data-move-offset="15"  style=" top: 100px;left:10px" >8MP,1.2G双核</div>
+            </div>                         	
+        </li>
+    </ul>  
+   <!--<div class="innerShadow top"></div>     
+    <div class="innerShadow bottom"></div> -->
+</div>
+
+<script>
+	jQuery(document).ready(function() {		
+		royalSliderInstance = $('#hotphones').royalSlider({	
+			imageAlignCenter:true,
+			directionNavEnabled: false,
+			//directionNavAutoHide: true,
+			controlNavEnabled:false,
+			slideshowEnabled: true,           
+			slideshowDelay:3000,
+   		hideArrowOnLastSlide:true,
+   		keyboardNavEnabled:true
+	    }).data('royalSlider');		
+	});
+</script>

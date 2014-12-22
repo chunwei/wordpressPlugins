@@ -1,0 +1,29 @@
+<style>
+#store .topicSuggestion {
+margin: 5px;
+margin-right: 20px;
+background-size: 40px 40px;
+line-height: 40px;
+padding-left: 50px;
+background-repeat: no-repeat;
+margin-left: 20px;
+cursor: pointer;
+font-size: 13px;
+}
+</style>
+<div id='store'>
+<?php 
+$query_args = array('fields' => 'ids');
+$authors = get_users( $query_args );
+foreach ( $authors as $author_id ) {
+$display_name=get_the_author_meta( 'display_name' ,$author_id); 
+?>
+<a class="useravatar" title="浏览所有 <?php echo $display_name; ?> 的文章" href="<?php echo get_author_posts_url( $author_id); ?>">
+<div class='topicSuggestion' style='background-image: url(<?php echo imdevice_get_first_image_url(get_avatar( $author_id, 40 )); ?>)'>
+<?php echo $display_name; ?></div>
+</a>
+
+<?php 
+}
+?>
+</div>

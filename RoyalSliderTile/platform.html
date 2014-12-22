@@ -1,0 +1,31 @@
+<div class="bannersContainer">
+    <div id="platform" class="royalSlider std ">           
+      <ul class="royalSlidesContainer">
+      		<li class="royalSlide" data-src="img/a/platform/ios.png" style="background:#EEE"></li> 
+          <li class="royalSlide" data-src="img/a/platform/android.png" style="background:#1BAE5D"></li>				                
+          <li class="royalSlide" data-src="img/a/platform/windowsphone.png"></li> 
+          <li class="royalSlide" data-src="img/a/platform/bb-logo.jpg"></li>
+          <li class="royalSlide" data-src="img/a/platform/hpwebos.png" style="background:#005295"></li>
+          <li class="royalSlide" data-src="img/a/platform/meego.png"></li>
+          
+      </ul>    
+  </div> <!-- Banner 1 End -->
+</div> <!-- Banners container ENd -->
+
+<script>
+	jQuery(document).ready(function() {		
+    		
+			   		var banner1 = $('#platform').royalSlider({
+			   			imageAlignCenter:true,
+			   			slideTransitionSpeed: 300,              
+			  			slideTransitionEasing:"easeInOutSine",
+							directionNavEnabled: false,
+							controlNavEnabled:false,
+							slideshowEnabled: true,           
+							slideshowDelay:2000,
+							slideshowPauseOnHover: true  
+					    }).data("royalSlider");		
+			
+		
+	});
+</script>

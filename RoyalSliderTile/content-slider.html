@@ -1,0 +1,42 @@
+﻿<div id="content-slider" class="royalSlider iskin">                
+    <ul class="royalSlidesContainer">
+        <li class="royalSlide"> 
+        	<div class="centeredSlide" style="margin-top:28px;">
+            	<img class="imageItem" src="img/contentSliderAssets/4.jpg" width="285" height="200"/>
+                <div class="slideTextBlock">
+                    <h4>Content Slider</h4>
+                    <p>You can place HTML content on each slide, touch navigation still works. Also you can disable mouse navigation completely or just for specific elements:</p>
+                    <a class="learnMore non-draggable" href="javascript:void()">Non-draggable element</a>
+                    <a class="learnMore" href="javascript:void()">Draggable element</a>
+                </div>
+            </div>
+        </li>
+        <li class="royalSlide"> 
+        	<div class="centeredSlide">
+            	<img class="imageItem" src="img/contentSliderAssets/1.jpg" width="195" height="240"/>
+            	<img class="imageItem" src="img/contentSliderAssets/2.jpg" width="178" height="240"/>
+            	<img class="imageItem" src="img/contentSliderAssets/3.jpg" width="197" height="240"/>
+            </div>
+        </li>
+        <li class="royalSlide"> 
+        	<div class="centeredSlide">            	
+                <div style="text-align:center; width: 660px; margin: 100px auto 0;">                    
+                    <p>Slider is tested on  iPad, iPad 2, iPhone 4, HTC Desire and Blackberry PlayBook.<br/> If you've found that something works incorrect on your device, so please contact me using contact form on my <a href="http://goo.gl/H9VAg">profile page</a> and I'll try to fix it asap.</p>
+                </div>   
+            </div>  	
+        </li>      
+    </ul>   
+</div> <!-- Content Slider End -->
+
+<script>
+	$(document).ready(function() {
+		royalSliderInstance = $('#content-slider').royalSlider({
+	  		directionNavEnabled: true,
+			directionNavAutoHide: false,
+			welcomeScreenEnabled:false,
+			imageAlignCenter:true,
+			hideArrowOnLastSlide:false,
+			keyboardNavEnabled:true
+	    }).data('royalSlider');	    		
+	});
+</script>

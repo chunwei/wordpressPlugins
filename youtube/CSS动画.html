@@ -1,0 +1,70 @@
+﻿来自:https://www.canva.com/
+<style>
+body{background: #C5DDF0;}
+#learnMore {
+	position: absolute;
+	float: right;
+	right: 8%;
+	bottom: 50px;
+	padding-right: 40px;
+	color: #ffffff;
+	font-size: 115%;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+#learnMore:hover {
+	color: #00c4cc;
+	opacity: 1;
+}
+
+#learnMore > span {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 29px;
+	height: 29px;
+	margin-top: -15px;
+	border-radius: 15px;
+	background-color: #ffffff;
+	background-image: url(https://di8vc3anm8wl1.cloudfront.net/images/learn_more_arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-animation: floating 3s infinite ease-in-out;
+	-moz-animation: floating 3s infinite ease-in-out;
+	animation: floating 3s infinite ease-in-out;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+@-webkit-keyframes floating {
+	0% {-webkit-transform: translateY(-4px);}
+	50% {-webkit-transform: translateY(4px);}
+	100% {-webkit-transform: translateY(-4px);}
+}
+
+@-moz-keyframes floating {
+	0% {-moz-transform: translateY(-4px);}
+	50% {-moz-transform: translateY(4px);}
+	100% {-moz-transform: translateY(-4px);}
+}
+
+@keyframes floating {
+	0% {transform: translateY(-4px);}
+	50% {transform: translateY(4px);}
+	100% {transform: translateY(-4px);}
+}
+
+#learnMore:hover > span {
+	background-color: #00c4cc;
+	background-image: url(https://di8vc3anm8wl1.cloudfront.net/images/learn_more_arrow_hover.gif);
+}
+</style>
+
+<a id="learnMore" href="#content1" style="opacity: 1;"><span></span>Scroll down to learn more</a>

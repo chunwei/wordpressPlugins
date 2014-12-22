@@ -1,0 +1,29 @@
+﻿<div id="tilefeature" class="royalSlider horizon">
+    <!-- <div class="royalLoadingScreen"><p>Loading slider&hellip;<br>Click and drag to navigate</p></div>  -->    
+    <ul class="royalSlidesContainer">
+    	<li class="royalSlide" style="background:#1BAE5D;"> 
+            <div class="royalCaption" style="left:5px; top:5px; background:#1BAE5D;">
+                <div class="royalCaptionItem" data-show-effect="moveleft fade" data-move-offset="30" style="left:10px;">触摸导航</div>
+                <div class="royalCaptionItem sgMidText" data-show-effect="moveleft fade" style="left: 10px; top:40px; " data-move-offset="30">支持手机和平板</div>
+           		<div class="royalCaptionItem " data-show-effect="fade moveright" data-move-offset="20" style="left: 160px; top: 10px;"><img src="img/a/dragnav.png"></div>
+            </div>         	
+        </li> 
+    </ul>  
+ <!--<div class="innerShadow top"></div>     
+    <div class="innerShadow bottom"></div>  -->
+</div>
+
+<script>
+	jQuery(document).ready(function() {		
+		royalSliderInstance = $('#tilefeature').royalSlider({	
+			imageAlignCenter:true,
+			directionNavEnabled: true,
+			directionNavAutoHide: true,
+			controlNavEnabled:false,
+			slideshowEnabled: true,           
+			slideshowDelay:3000,
+   		hideArrowOnLastSlide:true,
+   		keyboardNavEnabled:true
+	    }).data('royalSlider');		
+	});
+</script>

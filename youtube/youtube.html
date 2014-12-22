@@ -1,0 +1,466 @@
+﻿<?php
+/*
+Template Name: 只做测试
+*/
+?>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link id="css-302734097" class="www-core" rel="stylesheet" href="www-core-webp.css" data-loaded="true">
+	<link id="css-1079195918" class="www-home-c4" rel="stylesheet" href="www-home-c4-webp.css" data-loaded="true">
+
+<style>
+
+#guide-main .guide-section h3 {
+line-height: 23px;
+}
+#alerts{
+display: none;
+}
+
+.site-header .search-form {
+	/*position: absolute;
+	right: 20px;*/
+	top: 1px;
+}
+
+.site-header .search-field {
+	background-color: transparent;
+	background-image: url(search-icon.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height: 34px;
+	/*margin: 3px 0;*/
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition:         width 400ms ease, background 400ms ease;
+	width: 0;
+}
+
+.site-header .search-field:focus {
+	background-color: #fff;
+	border: 2px solid #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 230px;
+}
+.screen-reader-text {
+clip: rect(1px, 1px, 1px, 1px);
+position: absolute !important;
+}
+.search-form .search-submit {
+display: none;
+}
+#c4-header-bg-container {
+	background-image: url(c4-header-bg.jpg);
+}
+
+	.limgrinfo{
+		border: 0 solid #888;
+		position:relative;
+		padding:5px;
+		width:175px;
+
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		/*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.2 );*/
+		}
+	.limgrinfo:hover{background:#f1f1f1;}
+	.limg{border: 0}
+	.limg img{
+		border-radius: 50%;
+		}
+	.rinfo{
+		border: 0 dotted #F00;
+		position: absolute;
+		left: 40px;
+		top: 5px;
+		line-height:30px;
+		width:135px;
+		overflow: hidden;
+		white-space: nowrap;
+		word-wrap: normal;
+		-o-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+	}
+	.subscription-container{height:330px;overflow:hidden;}
+	.subscription-container:hover{overflow-y:scroll;}
+	.subscription-container li{margin-bottom:6px;}
+</style>
+<script src="jquery-1.10.2.min.js"></script>
+</head>
+
+
+
+
+<body dir="ltr" class="  ltr  webkit webkit-537      site-left-aligned  exp-watch7-comment-ui  hitchhiker-enabled      guide-enabled    guide-expanded    flex-width-enabled
+  page-loaded narrow" id="body">
+
+<div id="body-container">
+	<div id="yt-masthead-container" class="yt-grid-box yt-base-gutter">
+	<div id="yt-masthead" class="masthead-safety-mode">    
+	<a id="logo-container" href="/" title="YouTube 首页" class=" "><img id="logo" src="one-pixel-t.gif" alt="YouTube 首页"></a>
+	<div id="yt-masthead-user">
+	  <span id="yt-masthead-user-displayname" dir="ltr" class="yt-valign-container">Display Name </span>
+	</div>
+	<div id="yt-masthead-content" class="site-header">
+		<form role="search" method="get" class="search-form" action="http://www.imdevice.com/">
+			<label>
+			<span class="screen-reader-text">搜索：</span>
+			<input type="search" class="search-field" placeholder="搜索…" value="" name="s" title="搜索：">
+			</label>
+			<input type="submit" class="search-submit" value="搜索">
+		</form>
+	</div><!--yt-masthead-content-->
+	</div><!--yt-masthead-->
+	</div><!--yt-masthead-container-->
+	<div id="alerts">
+		<div class="yt-alert yt-alert-default yt-alert-info  " id="yt-lang-alert-container">
+	      	<div class="yt-alert-icon">
+	      		<img src="one-pixel-t.gif" class="icon master-sprite" alt="提醒图标">
+	      	</div>
+			<div class="yt-alert-buttons">
+				<button type="button" class="close yt-uix-close yt-uix-button yt-uix-button-close yt-uix-button-size-default" data-close-parent-class="yt-alert" role="button">
+					<span class="yt-uix-button-content">关闭 </span>
+				</button>
+			</div>
+			<div class="yt-alert-content" role="alert">
+				<span class="yt-alert-vertical-trick"></span>
+			    <div class="yt-alert-message">
+			            我们已为您更新了语言偏好设置。
+			    </div>
+			</div>
+			<div class="yt-alert-panel ">
+				<div class="yt-grid-box">
+			    <div id="yt-lang-alert-text">
+			      <span id="default-language-message">
+			我们已将您的语言偏好设置设为<strong>中文 (简体)</strong>。您可以<a href="">在下面更新此偏好设置</a>。
+			      </span>
+			      <span id="default-language-message-english" class="hid">
+			        We've set your language preference to <strong>Chinese</strong>. You can <a href="">update this preference below</a>.
+			      </span>
+			    </div>
+			    <div id="yt-lang-alert-links">
+			      <a href="">Learn more</a><br>
+			      <a href="">View this message in English</a>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div><!--alerts  end-->
+	<div id="page-container">
+		<div id="page" class="  channel clearfix">
+			<div id="guide">        
+				<div id="guide-container" class="collapsible-guide vve-check" data-sessionlink="ei=1RMeUo76FKKoyAH34oAw&amp;ved=CI8DEP4e">
+	      			<div id="guide-main" class="    guide-module   collapsed  spf-nolink ">
+			      		<div class="guide-module-toggle">
+							<span class="guide-module-toggle-icon">
+						            <span class="guide-module-toggle-arrow"></span>
+						            <img src='one-pixel-t.gif'>
+							</span>
+							<div class="guide-module-toggle-label">
+						            <h3><span>导读</span></h3>
+							</div>
+						</div><!--guide-module-toggle END-->
+			      		<div class="guide-module-content yt-scrollbar">
+			      			<ul class="guide-toplevel">
+								<li class="guide-section vve-check">
+									<h3>导读</h3>
+<ul class="subscription-container">
+<li>
+<a href="http://www.imdevice.com/author/36kr/" title="浏览所有 36氪 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/36kr-150x150.png" width="30" height="30" alt="36氪" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		36氪	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/engadgetchina/" title="浏览所有 Engadget 中国版 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/photo.jpg" width="30" height="30" alt="Engadget 中国版" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		Engadget 中国版	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/evolife/" title="浏览所有 Evolife 爱活网 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/evolife-150x150.jpg" width="30" height="30" alt="Evolife 爱活网" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		Evolife 爱活网	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/geekpark/" title="浏览所有 GeekPark 极客公园 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/geekpark-150x150.jpg" width="30" height="30" alt="GeekPark 极客公园" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		GeekPark 极客公园	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/huxiu/" title="浏览所有 虎嗅网 Huxiu 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/1-150x150.jpg" width="30" height="30" alt="虎嗅网 Huxiu" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		虎嗅网 Huxiu	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/ifanr/" title="浏览所有 ifanr 爱范儿 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/ifanr-150x150.png" width="30" height="30" alt="ifanr 爱范儿" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		ifanr 爱范儿	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/imdevice/" title="浏览所有 IMDevice 爱米 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/imdevice.png" width="30" height="30" alt="IMDevice 爱米" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		IMDevice 爱米	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/leiphone/" title="浏览所有 leiphone 雷锋网 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/leiphone-150x150.png" width="30" height="30" alt="leiphone 雷锋网" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		leiphone 雷锋网	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/mydrivers/" title="浏览所有 驱动之家 MyDrivers 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/11-150x150.jpg" width="30" height="30" alt="驱动之家 MyDrivers" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		驱动之家 MyDrivers	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/tech2ipo/" title="浏览所有 tech2ipo 创见 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/tech2ipo-150x150.jpg" width="30" height="30" alt="tech2ipo 创见" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		tech2ipo 创见	</div>
+</div>
+</a>
+</li>
+<li>
+<a href="http://www.imdevice.com/author/tmtpost/" title="浏览所有 钛媒体 TMTpost 的文章">
+<div class="limgrinfo">
+	<div class="limg"><img src="imgs/0-150x150.jpg" width="30" height="30" alt="钛媒体 TMTpost" class="wp-user-avatar wp-user-avatar-30 alignwp_user_avatar avatar avatar avatar-30 photo"></div>
+	<div class="rinfo">
+		钛媒体 TMTpost	</div>
+</div>
+</a>
+</li>
+</ul>
+									<hr class="guide-section-separator">
+								</li>	
+							</ul>
+							<div class="guide-section guide-header signup-promo guided-help-box">
+							    <p>立即登录，查看您的频道和推荐内容！</p>
+							    <div id="guide-builder-promo-buttons" class="signed-out clearfix">
+							      <a href="" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=ZvkfUoeRH6TV8AGppYGoDg">
+							      		<span class="yt-uix-button-content">登录 ›</span>
+							      	</a>
+							    </div>
+							</div><!--signup-promo END-->	
+						</div><!--guide-module-content END-->
+					</div><!--guide-main END-->
+				</div><!--guide-container END-->
+	      	</div><!--guide END-->
+			<div id="content">
+				<div class="branded-page-v2-container " id="c4-overview-tab">
+					<div class="branded-page-v2-col-container clearfix">
+						<div class="branded-page-v2-secondary-col">
+							<div class="branded-page-related-channels yt-card branded-page-gutter-padding">
+								<h2 class="branded-page-related-channels-title" dir="ltr">
+									<a href="/user/TheVerge/about">Some of our friends. Watch!</a>
+								</h2>
+								<ul class="branded-page-related-channels-list">
+									<li class="branded-page-related-channels-item clearfix" data-external-id="UCDRmGMSgrtZkOsh_NQl4_xw">Polygon</li>
+								</ul>
+							</div>
+						</div>
+						<div class="branded-page-v2-primary-col">
+							<div class="branded-page-v2-primary-col-header-container">
+								<div class="branded-page-v2-header channel-header">
+									<div id="gh-banner">
+										<div id="c4-header-bg-container" class=" has-custom-banner">
+											<div id="header-links">
+								
+											</div>
+								
+								
+								
+											<a class="channel-header-profile-image-container spf-link" href="">
+												<img class="channel-header-profile-image" src="google-logo.png" title="Google" alt="Google">
+											</a>
+										</div>
+								
+									</div>
+									<div class="">
+										<div class="primary-header-contents" id="c4-primary-header-contents">
+											<div class="primary-header-actions clearfix">
+											<span class="channel-header-subscription-button-container yt-uix-button-subscription-container with-preferences"><button aria-busy="false" type="button" class="yt-uix-subscription-button yt-uix-button yt-uix-button-subscribe-branded yt-uix-button-size-default" aria-live="polite" aria-role="button" data-channel-external-id="UCK8sQmJBp8GCxrOtXWBpyEA" data-style-type="branded" data-sessionlink="feature=channels4&amp;ei=7zsgUtjROMPHigLUr4GYBg&amp;ved=CJ0BEJsr" data-href="/ServiceLogin?passive=true&amp;hl=en_US&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26continue_action%3DQUFFLUhqbFFFR01fcHBxS1F4dEY1Nkg5MVB3NzdQeWNyd3xBQ3Jtc0trRUx1OURCcVY3clJ3Q0ttaUttWVhkRHVzelRIVks3TkxraENzMmxsQjMwQ2pzY2ZhZ2NNVUxaaWRwYndvWVJLV3ZPdkl2SE5LVnNJYzViUG9Dck5rMUlCWjRhYnpxZ2l4LUhORllvRlk2ZE5HT3lqTk40TkZJX0lKaG5IQUJsOXByYTJ5a19vZVlfcm5xWjhrdnhXZnc2S0pielE4ZFJhQWtPTkFielg1X0VDZXdOMGgtSmNldGpvMDZOcnROaTA0enA0VWQ%253D%26feature%3Dsubscribe%26hl%3Den_US%26next%3D%252Fchannel%252FUCK8sQmJBp8GCxrOtXWBpyEA%26nomobiletemp%3D1&amp;uilel=3&amp;service=youtube" role="button"><span class="yt-uix-button-valign"></span><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-subscribe" src="" alt="" title=""></span><span class="yt-uix-button-content"><span class="subscribe-label" aria-label="订阅">订阅</span><span class="subscribed-label" aria-label="取消订阅">已订阅</span><span class="unsubscribe-label" aria-label="取消订阅">取消订阅</span> </span></button><button type="button" class="yt-uix-subscription-preferences-button yt-uix-button yt-uix-button-default yt-uix-button-size-default yt-uix-button-empty" data-channel-external-id="UCK8sQmJBp8GCxrOtXWBpyEA" role="button"><span class="yt-uix-button-valign"></span><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-subscription-preferences" src="" alt="" title=""></span></button><span class="yt-subscription-button-subscriber-count-branded-horizontal subscribed">2,083,405</span>  <span class="yt-subscription-button-disabled-mask" title=""></span>
+								
+												<div class="yt-uix-overlay " data-overlay-style="primary" data-overlay-shape="tiny">
+								
+													<div class="yt-dialog hid">
+														<div class="yt-dialog-base">
+															<span class="yt-dialog-align"></span>
+															<div class="yt-dialog-fg">
+																<div class="yt-dialog-fg-content">
+																	<div class="yt-dialog-header">
+																		<h2 class="yt-dialog-title">
+																			阅偏好设置								
+																		</h2>
+																	</div>
+																	<div class="yt-dialog-loading">
+																		<div class="yt-dialog-waiting-content">
+																			<div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">正在加载...</div>
+																		</div>
+								
+																	</div>
+																	<div class="yt-dialog-content">
+																		<div class="subscription-preferences-overlay-content-container">
+																			<div class="subscription-preferences-overlay-loading ">
+																				<p class="yt-spinner">
+																					<img src="" class="yt-spinner-img" alt="正在加载图标">
+								
+																					<span class="yt-spinner-message">
+																						正在加载...
+																					</span>
+																				</p>
+								
+																			</div>
+																			<div class="subscription-preferences-overlay-content">
+																			</div>
+																		</div>
+								
+																	</div>
+																	<div class="yt-dialog-working">
+																		<div id="yt-dialog-working-overlay">
+																		</div>
+																		<div id="yt-dialog-working-bubble">
+																			<div class="yt-dialog-waiting-content">
+																				<div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">进行中...</div>
+																			</div>
+																		</div>
+								
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+								
+								
+												</div>
+								
+											</span>
+								
+								
+										</div>
+										<h1 class="branded-page-header-title">
+											<a class="spf-link" href="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3&amp;b=3">
+												<span class="qualified-channel-title ellipsized has-badge" title="Google"><span class="qualified-channel-title-wrapper ">  <span class="qualified-channel-title-text">
+													Google
+												</span>
+											</span>        <span class="qualified-channel-title-badge">
+												<img src="" class="yt-uix-tooltip yt-channel-title-icon-verified" alt="" title="经过验证的名称">  </span>
+								
+								
+											</span>
+										</a>
+									</h1>
+								
+								</div>
+								<div id="channel-subheader" class="clearfix branded-page-gutter-padding">
+								
+									<ul id="channel-navigation-menu" class="clearfix">
+										<li>
+											<button type="button" class="epic-nav-item-empty selected yt-uix-button yt-uix-button-epic-nav-item yt-uix-button-size-default yt-uix-button-empty" data-button-menu-id="channel-navigation-menu-dropdown" role="button" aria-label="选择视图："><span class="yt-uix-button-valign"></span><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-c4-home" src="" alt="" title=""></span><img class="yt-uix-button-arrow" src="" alt="" title=""></button>
+											<div id="channel-navigation-menu-dropdown" class="hid epic-nav-item-dropdown">
+												<ul>
+													<li class="epic-nav-item-selected">
+														<a class="spf-link yt-uix-button-menu-item" href="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3xakCoYjI3bN1&amp;b=3">浏览</a>
+													</li>
+								
+													<li>
+														<a class="spf-link yt-uix-button-menu-item" href="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3xakCpZg%3D&amp;b=3">Feed</a>
+													</li>
+								
+												</ul>
+											</div>
+								
+								
+										</li>
+										<li>
+											<a href="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3xbkOpJnS3A%3D%3D&amp;b=3" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=7zsgUtjROMPHigLUr4GYBg"><span class="yt-uix-button-content">视频</span></a>
+										</li>
+										<li>
+											<a href="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3xa4Fr4nJ&amp;b=3" class="yt-uix-button  spf-link  yt-uix-sessionlink yt-uix-button-epic-nav-item yt-uix-button-size-default" data-sessionlink="ei=7zsgUtjROMPHigLUr4GYBg"><span class="yt-uix-button-content">简介</span></a>
+										</li>
+										<li>
+										<div id="channel-search"><label class="show-search epic-nav-item secondary-nav" for="channels-search-field"><img class="epic-nav-item-heading-icon" src="" alt="搜索频道"></label><form class="search-form epic-nav-item secondary-nav" action="/sohu.php?u=2YlSkrWkW8o%2BQsVudaYH3OCJwMRImYrAPBgLXsX3xbwCoY7exw%3D%3D&amp;b=3" method="post"><input type="hidden" name="convertGET" value="1"><span class=" yt-uix-form-input-container yt-uix-form-input-text-container ">    <input class="yt-uix-form-input-text search-field" name="query" id="channels-search-field" type="text" placeholder="搜索频道" maxlength="100" autocomplete="off">
+										</span><button type="submit" class="search-button yt-uix-button yt-uix-button-c4-search yt-uix-button-size-default yt-uix-button-empty" role="button"><span class="yt-uix-button-valign"></span><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-search" src="" alt="" title=""></span></button></form></div>
+										</li>
+									</ul>
+								</div>
+								
+								</div>
+								
+								</div>
+							</div><!--branded-page-v2-primary-col-header-container END-->
+							<div class="branded-page-v2-body" id="gh-overviewtab">
+									<div class="c4-spotlight-module"></div>
+									<div id="c4-shelves-container" class="context-data-container"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--content END-->
+		</div><!--page END-->
+	</div><!--page-container END-->
+</div><!--body-container END-->
+
+<div id="footer-container" class="yt-base-gutter">
+	<div id="footer">
+		<div id="footer-main">
+			<div id="footer-logo">
+				<a href="/" title="YouTube 首页">
+					<img src="one-pixel-t.gif" alt="YouTube 首页">
+				</a>
+			</div>
+		</div><!--footer-main END-->
+		<div id="footer-links">links here</div>
+	</div><!--footer END-->
+</div><!--footer-container-->
+
+<script>
+$('.guide-module-toggle').click(function(){$('#guide-main').toggleClass('collapsed');$('.guide-module-content').css("display",function(index,value){return value=='none'?'block':'none';});});
+//$('.guide-module-toggle').click(function(){$('#feedlyTabsHolder').toggleClass('openleft');});
+//$('.guide-module-toggle').click(function(){$('#feedlyTabsHolder').slideToggle('show');});
+</script>
+</body>
+</html>
